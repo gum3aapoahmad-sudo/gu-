@@ -1,5 +1,6 @@
 
 
+
 export enum EditingMode {
   STANDARD = 'gemini-2.5-flash-image',
   PROFESSIONAL = 'gemini-3-pro-image-preview'
@@ -37,7 +38,7 @@ declare global {
   }
 
   interface Window {
-    // Re-added readonly modifier to fix the "All declarations of 'aistudio' must have identical modifiers" error.
+    // Added readonly modifier to fix the "All declarations of 'aistudio' must have identical modifiers" error.
     // This ensures consistency with the underlying environment's definition of window.aistudio.
     readonly aistudio: AIStudio;
   }
